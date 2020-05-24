@@ -36,4 +36,9 @@ public class LeapYearCheckerTest {
         assertFalse(leapYearChecker.isLeapYear(1000), "Failed for 1000");
     }
 
+    @Test
+    void whenDivisibleBy400ThenLeapYear() {
+        assertTrue(leapYearChecker.isLeapYear(400), "Failed for 400");
+    }
+
 }
