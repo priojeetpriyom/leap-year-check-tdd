@@ -26,4 +26,10 @@ public class LeapYearCheckerTest {
         assertFalse(leapYearChecker.isLeapYear(5));
     }
 
+    @Test
+    void whenDivisibleBy100ThenNotLeapYear() {
+        LeapYearChecker leapYearChecker = new LeapYearChecker();
+        assertFalse(leapYearChecker.isLeapYear(100), "Failed for 100");
+    }
+
 }
