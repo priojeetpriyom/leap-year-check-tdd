@@ -2,7 +2,7 @@ package com.priojeetpriyom.main;
 
 public class LeapYearChecker {
     public Boolean isLeapYear(int year) {
-        if(year == 100) {
+        if(year % 100 == 0) {
             return false;
         }
 
