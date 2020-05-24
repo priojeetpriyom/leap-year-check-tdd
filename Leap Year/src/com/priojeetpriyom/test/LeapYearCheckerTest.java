@@ -20,4 +20,10 @@ public class LeapYearCheckerTest {
         assertFalse(leapYearChecker.isLeapYear(1));
     }
 
+    @Test
+    void when5ThenNotLeapYear() {
+        LeapYearChecker leapYearChecker = new LeapYearChecker();
+        assertFalse(leapYearChecker.isLeapYear(5));
+    }
+
 }
